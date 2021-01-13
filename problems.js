@@ -62,4 +62,26 @@ function permutation(str1, str2) {
     return true;
 }
 
-console.log(permutation("amanaplanacanalpanama", "acanalpanamaamanaplan"));
+// console.log(permutation("amanaplanacanalpanama", "acanalpanamaamanaplan"));
+
+/**
+ * #3 URLify - Write a method to replace all spaces with %20
+ */
+
+function URLify(string) {
+    //create empty string
+    //loop over string
+    //push char[0] to string
+    //for all remaining chars, if space, push %20 otherwise, push char
+    //return new string
+
+    let url = "";
+
+    for (let char of string) {
+        char != " " ? url += char : url += "%20";
+    }
+
+    return url;
+}
+
+console.log(URLify("this is only a test"));
